@@ -1,0 +1,29 @@
+{
+  "name": "todoapi",
+  "version": "1.0.0",
+  "description": "Todo API",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abidtkg/todoapi.git"
+  },
+  "keywords": [
+    "TODO"
+  ],
+  "author": "Abid Hasan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abidtkg/todoapi/issues"
+  },
+  "homepage": "https://github.com/abidtkg/todoapi#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
