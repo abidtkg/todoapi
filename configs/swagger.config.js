@@ -2,11 +2,10 @@ const swaggerJsDoc = require('swagger-jsdoc');
 // SWAGGER CONFIGARATION
 const swaggerOptions = {
     swaggerDefinition: {
-      openapi: '3.0.0',
         info: {
             title: "Todo API",
             description: "Todo Application API Specification",
-            termsOfService: "",
+            termsOfService: "#",
             version: "1.0.0"
         },
         contact: {
@@ -16,9 +15,9 @@ const swaggerOptions = {
         },
         servers: [
             {
-              "url": "http://localhost:3000",
+              "url": "http://locahost:3000",
               "description": "Development server"
-            }
+            },
           ],
         securityDefinitions: {
           APIKeyHeader: {
