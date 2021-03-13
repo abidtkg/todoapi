@@ -19,12 +19,14 @@ app.use(bodyParser.json());
 // Import Router
 const homeRoutes = require('./routes/home.routes');
 const authRoutes = require('./routes/auth.routes');
+const profileRoutes = require('./routes/profile.routes');
 const errorRoutes = require('./routes/error.routes');
 
 // Implement Routes
 app.use('/', homeRoutes);
 app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 app.use('/auth', authRoutes);
+app.use('/user', profileRoutes);
 app.use('**', errorRoutes);
 
 
